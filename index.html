@@ -1,48 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#000000">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="icon" href="icon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EXO-L Membership</title>
   <style>
-    body {
+    body, html {
       margin: 0;
-      background-color: black;
+      padding: 0;
+      height: 100%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      background-color: #000;
     }
     img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 16px;
+      max-width: 100vw;
+      max-height: 100vh;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
-  <img src="66143.jpg" alt="EXO-L Membership Card" />
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('service-worker.js');
-      });
-    }
-  </script>
-
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
-          .then(() => console.log('Service Worker Registered'))
-          .catch(err => console.error('SW registration failed', err));
-      });
-    }
-  </script>
+  <img src="898.jpg" alt="EXO-L Membership Card">
 </body>
 </html>
